@@ -8,6 +8,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
 
+
 const Navbar = () => {
 
     const[nav, setNav] = useState(false)
@@ -16,9 +17,9 @@ const Navbar = () => {
     }
 
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100]">
+    <div className="fixed w-full h-20 shadow-xl z-[100] ">
       {/* Container */}
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 backdrop-blur-[5px]">
         <Image src={navLogo} alt="/" width={125} height={50} />
 
         {/* Main Menu */}
@@ -60,7 +61,7 @@ const Navbar = () => {
             <div className="flex w-full justify-between items-center">
               <Image src={navLogo} width={87} height={35} alt="" />
               <div onClick={handleNav} className="rounded-full shadow-lg shadow-[#2e3944] p-3 cursor-pointer">
-                <TfiClose size={25} />
+                <TfiClose size={20} />
               </div>
             </div>
             <div className="border-b border-[#748d92] my-4">
