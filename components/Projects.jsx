@@ -10,7 +10,7 @@ import ProjectItem from "../components/ProjectItem";
 const Projects = () => {
   return (
     // Parent container
-    <div className="w-full">
+    <div id="projects" className="w-full">
       {/* Container */}
       <div className="max-w-[1240px] mx-auto px-2 py-16">
         <p className="text-[#124e66] text-xl tracking-widest uppercase">
@@ -29,7 +29,7 @@ const Projects = () => {
           <ProjectItem
             title="Best Eats"
             backgroundImg={bestEats}
-            projectUrl="/besteats"
+            projectUrl="/best"
           />
           <ProjectItem
             title="Data Finance"

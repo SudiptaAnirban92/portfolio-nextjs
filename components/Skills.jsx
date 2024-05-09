@@ -12,7 +12,7 @@ import python from "../public/assets/skills/python.png";
 const Skills = () => {
   return (
     // Parent container
-    <div className="w-full lg:h-screen p-2">
+    <div id="skills" className="w-full lg:h-screen p-2">
       {/* Container */}
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className="text-xl tracking-widest uppercase text-[#124e66]">

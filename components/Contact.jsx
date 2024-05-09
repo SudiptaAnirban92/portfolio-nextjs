@@ -12,7 +12,7 @@ import { TfiEmail } from "react-icons/tfi";
 const Contact = () => {
   return (
     // Parent container
-    <div className="w-full lg:h-screen">
+    <div id="contact" className="w-full lg:h-screen">
       {/* Container */}
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <p className="text-xl -tracking-widest uppercase text-[#124e66]">
@@ -114,7 +114,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="flex justify-center py-12">
-          <Link href="/">
+          <Link href="/#hero">
             <div className="rounded-full shadow-lg shadow-[#2e3944] p-4 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#d3d9d4]">
               <HiOutlineChevronDoubleUp className="text-[#124e66]" size={30}/>
             </div>

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   body {
     @apply bg-[#d3d9d4] text-[#212a31] tracking-wide;
@@ -20,12 +24,12 @@
     @apply text-4xl sm:text-5xl md:text-6xl;
   }
   h2 {
-    @apply text-3xl sm:text-4xl
+    @apply text-3xl sm:text-4xl;
   }
   li {
-    @apply cursor-pointer
+    @apply cursor-pointer;
   }
   button {
-    @apply shadow-xl shadow-[#2e3944] rounded-xl uppercase bg-gradient-to-r from-[#124e66] to-[#748d92]
+    @apply shadow-xl shadow-[#2e3944] rounded-xl uppercase bg-gradient-to-r from-[#124e66] to-[#748d92] text-[#d3d9d4];
   }
 }
