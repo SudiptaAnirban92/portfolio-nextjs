@@ -24,8 +24,8 @@ const About = () => {
           </p>
           <p>
             I am at the moment focused on building fully responsive front-end
-            web applications with exceptional designs. I want to create designs
-            and applications that amazes people and takes their user experience
+            web applications with exceptional designs. I want to create and design
+            applications that amazes people and takes their user experience
             to another level.
           </p>
           <p className="text-[#212a31] py-2 cursor-pointer underline">

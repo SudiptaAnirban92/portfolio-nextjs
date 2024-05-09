@@ -1,23 +1,37 @@
-"use client"
+"use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import navLogo from "../public/assets/navLogo.png";
 import Link from "next/link";
 import { TfiMenu, TfiClose, TfiEmail } from "react-icons/tfi";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
-
-
 const Navbar = () => {
+  const [nav, setNav] = useState(false);
+  const handleNav = () => {
+    setNav(!nav);
+  };
 
-    const[nav, setNav] = useState(false)
-    const handleNav = () => {
-        setNav(!nav)
-    }
-
+  const [shadow, setShadow] = useState(false);
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+    window.addEventListener("scroll", handleShadow);
+  }, []);
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100] ">
+    <div
+      className={
+        shadow
+          ? "fixed w-full h-20 shadow-xl z-[100] "
+          : "fixed w-full h-20 z-[100] "
+      }
+    >
       {/* Container */}
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 backdrop-blur-[5px]">
         <Image src={navLogo} alt="/" width={125} height={50} />
@@ -52,15 +66,28 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-[#212a31]/70" : ''}>
-        <div className={nav ? "fixed left-0 top-0 w-[75%] h-screen sm:w-[60%] md:w-[45%] bg-[#d3d9d4] p-10 ease-in duration-500" :
-            "fixed left-[-100%] top-0 p-10 ease-in duration-500"
-        }>
+      <div
+        className={
+          nav
+            ? "md:hidden fixed left-0 top-0 w-full h-screen bg-[#212a31]/70"
+            : ""
+        }
+      >
+        <div
+          className={
+            nav
+              ? "fixed left-0 top-0 w-[75%] h-screen sm:w-[60%] md:w-[45%] bg-[#d3d9d4] p-10 ease-in duration-500"
+              : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+          }
+        >
           {/* Upperpart */}
           <div>
             <div className="flex w-full justify-between items-center">
               <Image src={navLogo} width={87} height={35} alt="" />
-              <div onClick={handleNav} className="rounded-full shadow-lg shadow-[#2e3944] p-3 cursor-pointer">
+              <div
+                onClick={handleNav}
+                className="rounded-full shadow-lg shadow-[#2e3944] p-3 cursor-pointer"
+              >
                 <TfiClose size={20} />
               </div>
             </div>
