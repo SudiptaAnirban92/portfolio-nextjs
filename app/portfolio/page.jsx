@@ -8,7 +8,7 @@ const portfolioApp = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
-        <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-[#212a31]/80 z-10" />
+        <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-[#212a31]/90 z-10" />
         <Image
           className="absolute z-1"
           layout="fill"
@@ -37,8 +37,18 @@ const portfolioApp = () => {
             great learning experience for me and also an impactful learning
             experience.
           </p>
-          <button className="px-8 py-2 mt-4 mr-8 ">Demo</button>
-          <button className="px-8 py-2 mt-4">Code</button>
+          <a
+            href="https://sudiptaanirban92.github.io/personal-portfolio/"
+            target="_blank"
+          >
+            <button className="px-8 py-2 mt-4 mr-8 ">Demo</button>
+          </a>
+          <a
+            href="https://github.com/SudiptaAnirban92/personal-portfolio.git"
+            target="_blank"
+          >
+            <button className="px-8 py-2 mt-4">Code</button>
+          </a>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-[#2e3944] rounded-xl p-4">
           <div className="p-2">

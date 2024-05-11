@@ -1,5 +1,5 @@
 import React from "react";
-import { TfiMenu, TfiClose, TfiEmail } from "react-icons/tfi";
+import { TfiEmail } from "react-icons/tfi";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
@@ -44,9 +44,14 @@ const Hero = () => {
                 <TfiEmail />
               </div>
             </a>
-            <div className="rounded-full shadow-lg shadow-[#2e3944] p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#748d92]">
-              <BsFillPersonLinesFill />
-            </div>
+            <a
+              href="https://docs.google.com/document/d/1h3HgNUqzVlSLI6oZYT8r2S8OmHHctOkTbIThDylCNQY/edit?usp=sharing"
+              target="_blank"
+            >
+              <div className="rounded-full shadow-lg shadow-[#2e3944] p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#748d92]">
+                <BsFillPersonLinesFill />
+              </div>
+            </a>
           </div>
         </div>
       </div>

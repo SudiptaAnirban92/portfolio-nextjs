@@ -1,5 +1,5 @@
 import React from "react";
-import Survey from "../../public/assets/projects/survey-form.jpg";
+import todo from "../../public/assets/projects/todo-list2.jpg";
 import Image from "next/image";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
@@ -13,12 +13,12 @@ const surveyForm = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={Survey}
+          src={todo}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[-50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Survey Form</h2>
-          <h3>React JS/ HTML/ Vanilla CSS</h3>
+          <h2 className="py-2">Todo List App</h2>
+          <h3>React JS/ Vanilla CSS</h3>
         </div>
       </div>
 
@@ -28,17 +28,18 @@ const surveyForm = () => {
           <p className="uppercase text-[#124e66]">project</p>
           <h2>Overview</h2>
           <p>
-            A basic survey form app made for freeCodeCamp Survey Form section.
-            Mostly used HTML and CSS and then later turned into a React app.
+            Here's a beginner Todo List app that was my first React JS project.
+            It really made me understand the fundamentals of React and how all
+            it's hooks such as useState() and useEffect() work. This app has a
+            minimalistic interface that includes an input section and a list
+            section where you can write, add and delete your todo list. It also
+            keeps your todo list intact, even if you terminate the server.
           </p>
-          <a
-            href="https://sudiptaanirban92.github.io/survey-form/"
-            target="_blank"
-          >
+          <a href="/">
             <button className="px-8 py-2 mt-4 mr-8 ">Demo</button>
           </a>
           <a
-            href="https://github.com/SudiptaAnirban92/survey-form.git"
+            href="https://github.com/SudiptaAnirban92/react-todo-list.git"
             target="_blank"
           >
             <button className="px-8 py-2 mt-4">Code</button>

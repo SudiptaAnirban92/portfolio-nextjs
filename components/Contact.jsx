@@ -1,8 +1,8 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import {
-  FaFacebook,
   FaFacebookF,
   FaGithub,
   FaLinkedinIn,
@@ -42,18 +42,38 @@ const Contact = () => {
               <div>
                 <p className="uppercase pt-8">Connect With Me</p>
                 <div className="flex items-center justify-between py-4 ">
-                  <div className="rounded-full shadow-lg shadow-[#2e3944] p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#748d92]">
-                    <FaLinkedinIn />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-[#2e3944] p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#748d92]">
-                    <FaGithub />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-[#2e3944] p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#748d92]">
-                    <FaFacebookF />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-[#2e3944] p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#748d92]">
-                    <TfiEmail />
-                  </div>
+                  <a
+                    href="https://www.linkedin.com/in/sudipta-anirban-022563110/"
+                    target="target_blank"
+                  >
+                    <div className="rounded-full shadow-lg shadow-[#2e3944] p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#748d92]">
+                      <FaLinkedinIn />
+                    </div>
+                  </a>
+                  <a
+                    href="https://github.com/SudiptaAnirban92"
+                    target="target_blank"
+                  >
+                    <div className="rounded-full shadow-lg shadow-[#2e3944] p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#748d92]">
+                      <FaGithub />
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/sudipta.anirban.3/"
+                    target="_blank"
+                  >
+                    <div className="rounded-full shadow-lg shadow-[#2e3944] p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#748d92]">
+                      <FaFacebookF />
+                    </div>
+                  </a>
+                  <a
+                    href="mailto:sudiptaanirban@gmail.com"
+                    target="target_blank"
+                  >
+                    <div className="rounded-full shadow-lg shadow-[#2e3944] p-6 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#748d92]">
+                      <TfiEmail />
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -116,7 +136,7 @@ const Contact = () => {
         <div className="flex justify-center py-12">
           <Link href="/#hero">
             <div className="rounded-full shadow-lg shadow-[#2e3944] p-4 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#d3d9d4]">
-              <HiOutlineChevronDoubleUp className="text-[#124e66]" size={30}/>
+              <HiOutlineChevronDoubleUp className="text-[#124e66]" size={30} />
             </div>
           </Link>
         </div>

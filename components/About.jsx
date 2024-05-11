@@ -1,6 +1,8 @@
+"use client"
 import React from "react";
 import profile from "../public/assets/profile.JPG";
 import Image from "next/image";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -24,13 +26,15 @@ const About = () => {
           </p>
           <p>
             I am at the moment focused on building fully responsive front-end
-            web applications with exceptional designs. I want to create and design
-            applications that amazes people and takes their user experience
-            to another level.
+            web applications with exceptional designs. I want to create and
+            design applications that amazes people and takes their user
+            experience to another level.
           </p>
-          <p className="text-[#212a31] py-2 cursor-pointer underline">
-            Check out some of my latest projects
-          </p>
+          <Link href="/#projects">
+            <p className="text-[#212a31] py-2 cursor-pointer underline">
+              Check out some of my latest projects
+            </p>
+          </Link>
         </div>
         {/* Column 2 */}
         <div className="w-full h-auto m-auto shadow-xl shadow-[#2e3944] rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">

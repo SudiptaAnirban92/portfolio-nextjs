@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import basicLanding from "../public/assets/projects/basic-landing.jpg";
 import bestEats from "../public/assets/projects/besteats.jpg";
@@ -21,10 +22,11 @@ const Projects = () => {
         {/* Projects grid */}
         <div className="grid md:grid-cols-2 gap-8">
           {/* Grid items */}
+
           <ProjectItem
-            title="Landing Page"
-            backgroundImg={basicLanding}
-            projectUrl="/basic"
+            title="Data Finance"
+            backgroundImg={dataFinance}
+            projectUrl="/data"
           />
           <ProjectItem
             title="Best Eats"
@@ -32,24 +34,25 @@ const Projects = () => {
             projectUrl="/best"
           />
           <ProjectItem
-            title="Data Finance"
-            backgroundImg={dataFinance}
-            projectUrl="/data"
-          />
-          <ProjectItem
-            title="Survey Form"
-            backgroundImg={surveyForm}
-            projectUrl="/survey"
+            title="Landing Page"
+            backgroundImg={basicLanding}
+            projectUrl="/basic"
           />
           <ProjectItem
             title="Portfolio App"
             backgroundImg={portfolio}
             projectUrl="/portfolio"
           />
+
           <ProjectItem
             title="Todo list App"
             backgroundImg={toDo}
             projectUrl="/todo"
+          />
+          <ProjectItem
+            title="Survey Form"
+            backgroundImg={surveyForm}
+            projectUrl="/survey"
           />
         </div>
       </div>
