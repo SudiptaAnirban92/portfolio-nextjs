@@ -28,9 +28,9 @@ const surveyForm = () => {
           <p className="uppercase text-[#124e66]">project</p>
           <h2>Overview</h2>
           <p>
-            Here's a beginner Todo List app that was my first React JS project.
+            Here&apos;s a beginner Todo List app that was my first React JS project.
             It really made me understand the fundamentals of React and how all
-            it's hooks such as useState() and useEffect() work. This app has a
+            it&apos;s hooks such as useState() and useEffect() work. This app has a
             minimalistic interface that includes an input section and a list
             section where you can write, add and delete your todo list. It also
             keeps your todo list intact, even if you terminate the server.

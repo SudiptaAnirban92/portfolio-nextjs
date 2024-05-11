@@ -11,16 +11,16 @@ const Hero = () => {
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <p className="text-sm tracking-widest text-[#212a31]">
-            LET'S BUILD SOMETHING TOGETHER
+            LET&apos;S BUILD SOMETHING TOGETHER
           </p>
           <h1 className="py-4 text-[#2e3944]">
-            Hey I'm
+            Hey I&apos;m
             <span className="text-[#124e66]"> Sudipta</span>
           </h1>
           <h1 className="py-2 text-[#2e3944]">A Front End Web Developer</h1>
           <p className="py-4 text-[#212a31] max-w-[70%] m-auto">
-            I'm a final semester CS student who has a passion for web
-            development. Currently, I'm specializing in front end development
+            I&apos;m a final semester CS student who has a passion for web
+            development. Currently, I&apos;m specializing in front end development
             and learning back-end technologies on the side. Building responsive
             applications is something I take very seriously and aspire to build
             breathtaking digital experience for my clients.
