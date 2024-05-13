@@ -1,6 +1,6 @@
-"use client"
+"use client";
 import React from "react";
-import profile from "../public/assets/profile.JPG";
+import profile from "../public/assets/20240331_134805.jpg";
 import Image from "next/image";
 import Link from "next/link";
 
