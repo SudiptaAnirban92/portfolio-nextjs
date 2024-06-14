@@ -3,9 +3,9 @@ import React from "react";
 import basicLanding from "../public/assets/projects/basic-landing.jpg";
 import bestEats from "../public/assets/projects/besteats.jpg";
 import dataFinance from "../public/assets/projects/data-finance.jpg";
-import surveyForm from "../public/assets/projects/survey-form.jpg";
+import solar from "../public/assets/projects/solar.jpg";
 import portfolio from "../public/assets/projects/portfolio.jpg";
-import toDo from "../public/assets/projects/todo-list.jpg";
+import docs from "../public/assets/projects/docs.jpg";
 import ProjectItem from "../components/ProjectItem";
 
 const Projects = () => {
@@ -45,14 +45,14 @@ const Projects = () => {
           />
 
           <ProjectItem
-            title="Todo list App"
-            backgroundImg={toDo}
-            projectUrl="/todo"
+            title="Docs Management App"
+            backgroundImg={docs}
+            projectUrl="/docs"
           />
           <ProjectItem
-            title="Survey Form"
-            backgroundImg={surveyForm}
-            projectUrl="/survey"
+            title="Solar Solutions App"
+            backgroundImg={solar}
+            projectUrl="/solar"
           />
         </div>
       </div>

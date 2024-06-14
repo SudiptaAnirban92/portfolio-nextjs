@@ -1,10 +1,10 @@
 import React from "react";
-import todo from "../../public/assets/projects/todo-list2.jpg";
+import document from "../../public/assets/projects/docs.jpg";
 import Image from "next/image";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
-const surveyForm = () => {
+const docs = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -13,12 +13,12 @@ const surveyForm = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={todo}
+          src={document}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[-50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Todo List App</h2>
-          <h3>React JS/ Vanilla CSS</h3>
+          <h2 className="py-2">Docs Management App</h2>
+          <h3>React JS/ Tailwind CSS</h3>
         </div>
       </div>
 
@@ -28,18 +28,15 @@ const surveyForm = () => {
           <p className="uppercase text-[#124e66]">project</p>
           <h2>Overview</h2>
           <p>
-            Here&apos;s a beginner Todo List app that was my first React JS project.
-            It really made me understand the fundamentals of React and how all
-            it&apos;s hooks such as useState() and useEffect() work. This app has a
-            minimalistic interface that includes an input section and a list
-            section where you can write, add and delete your todo list. It also
-            keeps your todo list intact, even if you terminate the server.
+            Here&apos;s a minimalistic Document Management App. It really made me understand the fundamentals of React and
+            how all it&apos;s hooks such as useState() and useEffect() work.
+            This app has a simple and easy on the eyes interface where you can store as much document you want. It is all dynamic where you can add as much data as you want along with the progress of the data giving you an options to download if it is complete.
           </p>
-          <a href="/">
+          <a href="https://docs-react-self.vercel.app/" target="_blank">
             <button className="px-8 py-2 mt-4 mr-8 ">Demo</button>
           </a>
           <a
-            href="https://github.com/SudiptaAnirban92/react-todo-list.git"
+            href="https://github.com/SudiptaAnirban92/docs-react.git"
             target="_blank"
           >
             <button className="px-8 py-2 mt-4">Code</button>
@@ -72,4 +69,4 @@ const surveyForm = () => {
   );
 };
 
-export default surveyForm;
+export default docs;

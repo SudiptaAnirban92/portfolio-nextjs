@@ -16,7 +16,7 @@ const About = () => {
           </p>
           <h2 className="py-4">Who I Am</h2>
           <p className="text-[#212a31] py-2">
-            I am a final semester CS student from North South University
+            I am a final semester CSE student from North South University
             currently on my way to complete graduation. I have always been
             fascinated with software and technology which made me pursue
             computer science in the first place. At this stage of life, among a
